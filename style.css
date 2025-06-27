@@ -51,32 +51,29 @@ body {
 }
 
 .hero {
-  text-align: center;
-  padding: 60px 20px 20px;
-  background-color: #111;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  color: white;
+  text-align: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  border-radius: 12px;
 }
 
 .hero h1 {
   font-size: 48px;
   color: #f5c518;
-  margin-bottom: 10px;
 }
 
 .hero p {
   font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.hero-background img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  opacity: 0.2;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  margin-top: 10px;
 }
 
 .about,
@@ -147,7 +144,6 @@ footer {
   text-decoration: underline;
 }
 
-/* Responsive menu */
 @media (max-width: 768px) {
   .menu {
     display: none;
