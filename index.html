@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav class="navbar">
+  <header class="navbar">
     <img src="https://i.ibb.co/kVg090hT/file-00000000ffb461f4910ea319e3ba9968.png" alt="2baz logo" class="logo-img" />
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
     <ul class="menu" id="menu">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About Us</a></li>
@@ -17,78 +17,72 @@
       <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-  </nav>
+  </header>
 
-  <section id="home" class="hero">
-    <h1>2baz Industries Co.</h1>
-    <p>No Risk, No Story</p>
-    <div class="hero-background">
-      <img src="https://i.ibb.co/spWHM99z/factory.jpg" alt="Factory Background" />
+  <section id="home" class="hero" style="background-image: url('https://i.ibb.co/spWHM99z/factory.jpg'); background-size: cover; background-position: center;">
+    <div class="hero-overlay">
+      <h1>2baz Industries Co.</h1>
+      <p>No Risk, No Story</p>
     </div>
   </section>
 
   <section id="about" class="about">
     <h2>About Us</h2>
-    <p>Leading manufacturer and distributor of innovative dental solutions, empowering clinicians with precision and safety.</p>
+    <p>We are specialized in high-end dental materials and CAD/CAM technologies with a focus on innovation and quality.</p>
   </section>
 
   <section id="products" class="products">
-    <h2>Products</h2>
+    <h2>Our Products</h2>
     <div class="product-grid">
       <div class="product-item">
-        <img src="https://i.ibb.co/TMxZvwXF/composite.jpg" alt="Composite">
-        <p>Composite</p>
+        <img src="https://i.ibb.co/KcwpCqF6/CADCAM-Device.jpg" alt="CADCAM Device">
+        <p>CAD/CAM Device</p>
       </div>
       <div class="product-item">
-        <img src="https://i.ibb.co/CsbS9nFV/bond.jpg" alt="Bond">
-        <p>Bond</p>
+        <img src="https://i.ibb.co/rR9nwgKR/Scanner.jpg" alt="Scanner">
+        <p>Scanner</p>
       </div>
       <div class="product-item">
-        <img src="https://i.ibb.co/JFKk4Shk/light.jpg" alt="Light Cure">
+        <img src="https://i.ibb.co/JFKk4Shk/Light-cure.jpg" alt="Light Cure">
         <p>Light Cure</p>
       </div>
       <div class="product-item">
-        <img src="https://i.ibb.co/d0ZjqVZ8/endo.jpg" alt="Endo Files">
-        <p>Endo Files</p>
+        <img src="https://i.ibb.co/CsbS9nFV/Bond.jpg" alt="Bond">
+        <p>Bond</p>
       </div>
       <div class="product-item">
-        <img src="https://i.ibb.co/KcwpCqF6/cadcam.jpg" alt="CAD/CAM Device">
-        <p>CAD/CAM Devices</p>
-      </div>
-      <div class="product-item">
-        <img src="https://i.ibb.co/rR9nwgKR/scanner.jpg" alt="Scanner">
-        <p>Scanner</p>
+        <img src="https://i.ibb.co/TMxZvwXF/Composite.jpg" alt="Composite">
+        <p>Composite</p>
       </div>
     </div>
   </section>
 
   <section id="certifications" class="certifications">
     <h2>Certifications</h2>
-    <p>ISO 13485, CE Mark, FDA Registered</p>
+    <p>Our products meet international standards and have CE and ISO certifications.</p>
   </section>
 
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <p>📞 Hotline: 19888</p>
-    <p>📧 Email: info@2bazindustries.com</p>
-    <p>💬 Customer Service: Available 24/7</p>
-  </section>
-
-  <footer>
-    <p>Follow us:</p>
+    <p>Hotline: 190XX</p>
+    <p>Email: support@2baz.com</p>
     <ul class="social">
       <li><a href="#">Facebook</a></li>
       <li><a href="#">Instagram</a></li>
       <li><a href="#">TikTok</a></li>
       <li><a href="#">LinkedIn</a></li>
     </ul>
-    <p>&copy; 2025 2baz Industries Co. All rights reserved.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 2baz Industries Co. All rights reserved.
   </footer>
 
   <script>
-    document.getElementById('menu-toggle').onclick = () => {
-      document.getElementById('menu').classList.toggle('open');
-    };
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('open');
+    }
   </script>
 </body>
 </html>
